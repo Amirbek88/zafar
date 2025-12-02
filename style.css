@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background: red;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: darkred;
+}
+
+#message img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Мобильная адаптация */
+
+@media (max-width: 600px) {
+    button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+    #message img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
